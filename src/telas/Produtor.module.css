@@ -1,0 +1,36 @@
+.foto { display: block; border-radius: var(--raio); overflow: hidden; aspect-ratio: 16 / 9; box-shadow: var(--sombra); }
+.titulo { margin: 12px 0 10px; padding: 7px 12px; text-align: center; border-radius: 4px; background: var(--marinho); color: #fff; font-weight: 400; font-size: 1.18rem; }
+.ficha { background: var(--cartao); border-radius: 6px; padding: 10px 12px; font-size: .9rem; color: #3d4b57; display: grid; gap: 2px; }
+.ficha strong { color: var(--marinho); }
+.ficha .dist { color: var(--verde-texto); }
+.distEsq { color: var(--texto-2); }
+.sobre { margin-top: 6px; }
+.seta { display: grid; place-items: center; margin: 8px 0; }
+.seta svg { width: 26px; height: 26px; }
+.produtos { display: grid; gap: 10px; }
+.produto { background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, .14); padding: 10px 12px; }
+.linha { display: grid; grid-template-columns: 48px 1fr auto; grid-template-areas: "ilu nome preco" "ilu passo add"; gap: 6px 10px; align-items: center; }
+.linha > span:first-child { grid-area: ilu; }
+.nome { grid-area: nome; font-weight: 600; }
+.preco { grid-area: preco; text-align: right; font-size: .84rem; color: #3d4b57; line-height: 1.25; }
+.preco small { display: block; font-size: .78rem; color: var(--texto-2); }
+.passo { grid-area: passo; display: inline-flex; width: fit-content; }
+.passo button, .passo input { width: 34px; height: 32px; border: 1.5px solid var(--marinho); background: #fff; text-align: center; padding: 0; color: var(--marinho); }
+.passo button { cursor: pointer; font-size: 1.05rem; line-height: 1; }
+.passo button:first-child { border-radius: 4px 0 0 4px; }
+.passo button:last-child { border-radius: 0 4px 4px 0; }
+.passo input { border-left: 0; border-right: 0; font-size: .92rem; appearance: textfield; -moz-appearance: textfield; }
+.passo input::-webkit-inner-spin-button, .passo input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.add { grid-area: add; justify-self: end; min-height: 34px; padding: 0 14px; border: 0; border-radius: 4px; background: var(--marinho); color: #fff; font-size: .9rem; cursor: pointer; }
+.rastreio { margin-top: 8px; border-top: 1px solid #eee; padding-top: 6px; }
+.rastreio summary { display: flex; align-items: center; gap: 6px; cursor: pointer; width: fit-content; font-size: .86rem; font-weight: 600; list-style: none; padding: 2px 0; font-variant-numeric: tabular-nums; }
+.rastreio summary::-webkit-details-marker { display: none; }
+.rastreio summary svg { width: 17px; height: 17px; }
+.rastreio summary::after { content: "Rastrear"; font-weight: 400; color: var(--texto-2); margin-left: 4px; text-decoration: underline; text-underline-offset: 2px; }
+.rastreio[open] summary::after { content: "Fechar"; }
+.tempo { margin: 10px 0 4px 6px; border-left: 2px solid var(--verde-app); }
+.tempo li { position: relative; padding: 0 0 10px 16px; display: grid; font-size: .86rem; }
+.tempo li::before { content: ""; position: absolute; left: -7px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 2px solid var(--marinho); }
+.tempo li:last-child { padding-bottom: 0; }
+.tempo span { color: var(--texto-2); }
+.nota { font-size: .82rem; color: var(--texto-2); margin-top: 10px; text-align: center; }

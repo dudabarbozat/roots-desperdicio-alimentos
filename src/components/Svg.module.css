@@ -1,0 +1,3 @@
+.alimento { display: block; flex: none; object-fit: cover; border-radius: 10px; background: #ddd; box-shadow: 0 1px 3px rgba(0, 0, 0, .25); }
+.vazio { display: block; flex: none; border-radius: 10px; }
+.cena { display: block; width: 100%; height: 100%; object-fit: cover; background: #cfd8c8; }

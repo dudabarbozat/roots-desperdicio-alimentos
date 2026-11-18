@@ -1,0 +1,22 @@
+.barra { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; color: var(--texto-2); font-size: .95rem; }
+.barra :global(.botao) { flex: none; }
+.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.banca {
+  display: flex; flex-direction: column; align-items: center; text-align: center; height: 100%;
+  background: #fffcfc; border-radius: var(--raio); box-shadow: var(--sombra); overflow: hidden;
+  text-decoration: none; color: var(--marinho); padding-bottom: 8px;
+}
+.banca:hover .nome { text-decoration: underline; }
+.foto { display: block; width: 100%; aspect-ratio: 16 / 11; }
+
+.nome { font-weight: 700; font-size: .95rem; line-height: 1.2; padding: 8px 8px 2px; }
+.linha { font-size: .8rem; color: var(--texto-2); padding: 0 8px; }
+.distancia { font-size: .85rem; font-weight: 700; color: var(--verde-texto); padding: 2px 8px 0; }
+.rodape { display: flex; justify-content: space-between; align-items: center; gap: 4px; width: 100%; padding: 8px 6px 0 10px; margin-top: auto; }
+.rodape .linha { padding: 0; text-align: right; }
+.nota { display: inline-flex; align-items: center; gap: 3px; font-size: .8rem; color: var(--texto-2); }
+.nota svg { width: 15px; height: 15px; }
+@media (max-width: 370px) { .grade { gap: 10px; } .nome { font-size: .88rem; } }
+.faixa { position: relative; margin-bottom: 14px; border-radius: var(--raio); overflow: hidden; box-shadow: var(--sombra); }
+.faixa img { display: block; width: 100%; aspect-ratio: 16 / 7; object-fit: cover; }
+.faixa figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 12px 10px; color: #fff; font-weight: 600; font-size: .95rem; background: linear-gradient(transparent, rgba(16, 35, 52, .85)); }

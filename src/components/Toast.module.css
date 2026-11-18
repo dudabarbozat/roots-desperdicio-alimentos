@@ -1,0 +1,11 @@
+.regiao { position: fixed; left: 50%; bottom: 96px; z-index: 40; transform: translateX(-50%); width: min(388px, calc(100vw - 32px)); pointer-events: none; }
+.toast {
+  pointer-events: auto; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: var(--marinho); color: #fff; border: 2px solid var(--verde-app); border-radius: 8px; padding: 10px 10px 10px 14px;
+  font-size: .94rem; box-shadow: 0 12px 30px -12px rgba(0, 0, 0, .5);
+}
+.botao { background: var(--verde-app); border: 0; color: var(--marinho); border-radius: 4px; padding: 7px 10px; font-weight: 700; cursor: pointer; flex: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .toast { animation: sobe .18s ease-out; }
+  @keyframes sobe { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+}

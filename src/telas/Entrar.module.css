@@ -1,0 +1,15 @@
+.tela { display: flex; flex-direction: column; min-height: calc(100dvh - 120px); padding-top: 7vh; color: #fff; }
+.logo { width: 76%; margin: 0 auto; }
+.frase { text-align: center; color: #d5dee6; margin: 18px 0 34px; }
+.form { display: grid; gap: 18px; }
+.email {
+  display: grid; grid-template-columns: 32px 1fr 32px; align-items: center; height: 50px; padding: 0 12px;
+  border: 0; border-radius: 4px; background: var(--tela); color: #5b5b5b; font-weight: 600; font-size: 1.08rem; cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+.email svg { width: 26px; height: 26px; color: var(--marinho); }
+.esqueci { color: #fff; font-weight: 600; font-size: .95rem; margin-top: -6px; justify-self: start; }
+.form :global(.botao) { justify-self: center; min-width: 140px; margin-top: 10px; }
+.rodape { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: auto; padding-top: 36px; }
+.rodape a { color: var(--verde-app); font-weight: 600; }
+.tela :focus-visible { outline-color: var(--verde-app); }

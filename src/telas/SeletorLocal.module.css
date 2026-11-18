@@ -1,0 +1,17 @@
+.caixa { background: #fff; border-radius: var(--raio); box-shadow: var(--sombra); padding: 10px 12px; margin-bottom: 14px; }
+.escuro { background: rgba(255, 255, 255, .07); box-shadow: none; border: 1px solid rgba(255, 255, 255, .2); color: #fff; }
+.escuro :global(.campo label) { color: var(--verde-app); }
+.linha { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; }
+.icone { width: 22px; height: 22px; }
+.texto { display: grid; line-height: 1.25; min-width: 0; overflow-wrap: anywhere; }
+.rotulo { font-size: .78rem; color: var(--texto-2); text-transform: uppercase; letter-spacing: .06em; font-weight: 600; }
+.escuro .rotulo, .escuro .obs { color: #c9d4de; }
+.obs { font-size: .85rem; color: var(--texto-2); }
+.form { display: grid; gap: 10px; margin-top: 12px; }
+.cepLinha { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+.erro { color: var(--vermelho-texto); font-weight: 600; font-size: .9rem; min-height: 0; }
+.escuro .erro { color: #ffb4b8; }
+.erro:empty { display: none; }
+.fonteDados { font-size: .8rem; color: var(--texto-2); }
+.escuro .fonteDados { color: #c9d4de; }
+.form :global(.link) { justify-self: start; }

@@ -1,0 +1,24 @@
+.tela { color: #fff; display: grid; gap: 22px; }
+.tela :focus-visible { outline-color: var(--verde-app); }
+.tela :global(.campo label) { color: var(--verde-app); }
+.tela a { color: var(--verde-app); font-weight: 600; }
+.esq { min-height: 300px; }
+.avatar { display: block; width: 120px; height: 120px; margin: 4px auto 0; border-radius: 50%; border: 3px solid var(--verde-app); overflow: hidden; }
+.avatar :global(svg) { width: 100%; height: 100%; }
+.form { display: grid; gap: 12px; }
+.form > :global(.botao) { justify-self: end; }
+.bloco { display: grid; gap: 10px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .15); }
+.bloco > :global(.botao) { justify-self: start; }
+.titulo { display: flex; align-items: center; gap: 8px; font-family: var(--fonte-titulo); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: 1rem; color: var(--verde-app); }
+.titulo svg { width: 20px; height: 20px; }
+.obs { font-size: .86rem; color: #c9d4de; }
+.erro { color: #ffb4b8; font-weight: 600; }
+.ok { color: var(--verde-app); font-weight: 600; }
+.interruptor { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-weight: 600; }
+.interruptor input { appearance: none; width: 46px; height: 26px; border-radius: 999px; background: rgba(255, 255, 255, .25); position: relative; cursor: pointer; margin: 0; transition: background .15s; }
+.interruptor input::after { content: ""; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; transition: transform .15s; }
+.interruptor input:checked { background: var(--verde-sim); }
+.interruptor input:checked::after { transform: translateX(20px); }
+.interruptor input:disabled { opacity: .5; cursor: not-allowed; }
+@media (prefers-reduced-motion: reduce) { .interruptor input, .interruptor input::after { transition: none; } }
+.rodape { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, .15); color: #d5dee6; font-size: .9rem; }

@@ -1,0 +1,23 @@
+.lista { display: grid; gap: 14px; margin-top: 4px; }
+.receita {
+  display: grid; grid-template-columns: 60px 1fr; gap: 6px; align-items: start;
+  background: var(--cartao); border: 2.5px solid var(--verde-pitch); border-radius: var(--raio); padding: 12px 12px 12px 6px; box-shadow: var(--sombra);
+  font-family: var(--fonte-cartao);
+}
+.corpo { display: grid; gap: 4px; min-width: 0; justify-items: start; }
+.dia { font-size: .76rem; font-weight: 500; text-transform: uppercase; letter-spacing: .08em; color: var(--texto-2); }
+.nome { font-weight: 500; font-size: 1.12rem; }
+.meta { font-weight: 300; font-size: .9rem; }
+.ings { display: flex; flex-wrap: wrap; gap: 5px; margin: 4px 0; }
+.ing { font-size: .82rem; font-weight: 500; padding: 2px 8px; border-radius: 4px; background: #fff; border: 1.5px solid var(--verde-pitch); }
+.ing span { font-weight: 300; }
+.hoje { border-color: var(--vermelho); }
+.breve { border-color: var(--laranja); }
+.ok { border-color: var(--verde-pitch); }
+.falta { border-style: dashed; border-color: #8b96a0; color: var(--texto-2); }
+.passos { font-size: .92rem; width: 100%; }
+.passos summary { cursor: pointer; font-weight: 500; padding: 4px 0; }
+.passos ol { list-style: decimal; padding-left: 20px; display: grid; gap: 4px; font-weight: 300; margin: 4px 0 6px; }
+.regra { margin-top: 16px; font-size: .9rem; color: var(--grafite); }
+.regra summary { cursor: pointer; font-weight: 600; color: var(--marinho); padding: 2px 0; }
+.regra p { margin-top: 6px; }

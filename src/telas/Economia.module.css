@@ -1,0 +1,44 @@
+.meta { background: #fff; border-radius: var(--raio); box-shadow: var(--sombra); padding: 14px; margin-bottom: 22px; display: grid; gap: 8px; }
+.metaTopo { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.metaRotulo { display: inline-flex; align-items: center; gap: 6px; font-family: var(--fonte-titulo); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .9rem; }
+.metaRotulo svg { width: 20px; height: 20px; }
+.metaNumero { font-size: 1.05rem; }
+.metaNumero strong { font-size: 1.35rem; }
+.barraMeta { height: 14px; border-radius: 999px; background: var(--cinza-anel); overflow: hidden; }
+.barraMeta span { display: block; height: 100%; background: var(--verde-pitch); border-radius: 999px; }
+@media (prefers-reduced-motion: no-preference) { .barraMeta span { transition: width .4s ease; } }
+.metaFalta { font-size: .9rem; color: var(--texto-2); }
+.metaForm { display: grid; gap: 10px; border-top: 1px solid #eee; padding-top: 10px; }
+.metaAcoes { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; }
+
+.destaqueRotulo { font-family: var(--fonte-titulo); font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: .86rem; }
+.destaqueValor { font-family: var(--fonte-titulo); font-weight: 700; font-size: 2.5rem; line-height: 1.1; margin-top: 2px; }
+.destaqueValor span { font-weight: 400; font-size: 1.25rem; }
+.destaqueSub { font-family: var(--fonte-titulo); color: var(--grafite); margin-top: 4px; }
+
+.aneis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 20px; }
+.anel { text-align: center; min-width: 0; }
+.anel svg { width: 100%; max-width: 96px; margin: 0 auto; }
+.trilha { fill: none; stroke: var(--cinza-anel); stroke-width: 9; }
+.valor { fill: none; stroke: var(--verde-pitch); stroke-width: 9; stroke-linecap: round; }
+.anel text { font-family: var(--fonte-titulo); font-size: 19px; fill: #111; }
+.anel figcaption { font-family: var(--fonte-titulo); font-size: .8rem; color: var(--grafite); margin-top: 6px; line-height: 1.25; }
+.anel figcaption strong { display: block; font-size: .9rem; color: var(--marinho); }
+
+.legenda { display: flex; gap: 14px; flex-wrap: wrap; font-size: .84rem; color: var(--grafite); margin: -4px 0 8px; }
+.legenda span::before { content: ""; display: inline-block; width: 12px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.lSalvo::before { background: var(--verde-pitch); }
+.lDesc::before { background: var(--marinho); }
+.lMeta::before { height: 0 !important; border-top: 2px dashed var(--laranja); vertical-align: 3px !important; }
+.grafico { background: #fff; border-radius: var(--raio); box-shadow: var(--sombra); padding: 12px 8px 4px; }
+.grafico svg { width: 100%; height: auto; }
+.eixo { stroke: #c9cdd1; stroke-width: 1; }
+.bSalvo { fill: var(--verde-pitch); }
+.bDesc { fill: var(--marinho); }
+.linhaMeta { stroke: var(--laranja); stroke-width: 2; stroke-dasharray: 6 4; }
+.mes { font-size: 12px; fill: var(--texto-2); }
+.mesAtual { font-size: 12px; font-weight: 700; fill: var(--marinho); }
+.comparacao { font-size: .9rem; color: var(--grafite); margin-top: 10px; }
+.acao { margin-top: 22px; background: var(--marinho); color: #fff; border-radius: var(--raio); padding: 14px; display: grid; gap: 10px; }
+.acao :global(.botao) { background: var(--verde-app); color: var(--marinho); }
+.acao :focus-visible { outline-color: var(--verde-app); }
