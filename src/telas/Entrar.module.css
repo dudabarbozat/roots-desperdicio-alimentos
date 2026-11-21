@@ -13,3 +13,4 @@
 .rodape { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: auto; padding-top: 36px; }
 .rodape a { color: var(--verde-app); font-weight: 600; }
 .tela :focus-visible { outline-color: var(--verde-app); }
+@media (min-width: 1000px) { .tela { min-height: calc(min(880px, 100dvh - 48px) - 20px - 46px); } }

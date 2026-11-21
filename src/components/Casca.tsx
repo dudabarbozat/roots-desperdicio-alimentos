@@ -50,8 +50,27 @@ export function Casca({ children }: { children: ReactNode }) {
   const aba = '/' + (rota.split('/')[1] ?? '') + '/';
 
   return (
-    <ProvedorAviso>
+    <div className={s.palco}>
       <a className={s.pular} href="#conteudo">Pular para o conteúdo</a>
+      <aside className={s.lateral} aria-label="Sobre o protótipo">
+        <img className={s.logo} src={asset('/img/logo-roots.svg')} alt="Roots" width={1040} height={335} />
+        <p>App para controlar os alimentos de casa: validade, compras por foto, receitas com o que vence primeiro e produtores da agricultura familiar.</p>
+        <p><b>Para quem é:</b> quem busca consumo consciente e quer parar de jogar comida fora.</p>
+        <ul className={s.lista}>
+          <li><Icone nome="lista" /><span><b>Despensa</b> ordenada por vencimento, com alerta por cor e lembrete.</span></li>
+          <li><Icone nome="camera" /><span><b>Compras por foto</b>, reconhecidas no próprio navegador. A foto não sai do aparelho.</span></li>
+          <li><Icone nome="panela" /><span><b>Receitas</b> que usam primeiro o que vence antes.</span></li>
+          <li><Icone nome="mapa" /><span><b>Feira</b> com produtores locais em lista e no mapa.</span></li>
+        </ul>
+        <div className={s.links}>
+          <a className="botao botao--primario botao--pequeno" href="https://github.com/dudabarbozat/roots-desperdicio-alimentos" target="_blank" rel="noreferrer">
+            <Icone nome="github" />Ver o código no GitHub
+          </a>
+        </div>
+        <p className={s.contexto}>Protótipo de portfólio. Pitch do desafio “Produção Sustentável e Consumo Verde”, reconstruído em 2026.</p>
+      </aside>
+      <div className={s.aparelho}>
+      <ProvedorAviso>
       <div className={`${s.app} ${entrar || marinho ? s.appMarinho : ''}`}>
         {!entrar ? (
           <header className={s.topo}>
@@ -90,6 +109,8 @@ export function Casca({ children }: { children: ReactNode }) {
         ) : null}
       </div>
       <VigiaLembretes />
-    </ProvedorAviso>
+      </ProvedorAviso>
+      </div>
+    </div>
   );
 }

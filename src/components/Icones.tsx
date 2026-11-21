@@ -27,7 +27,8 @@ const caminhos = {
   mira: <><circle cx="12" cy="12" r="7" /><path d="M12 2v4M12 18v4M2 12h4M18 12h4" /></>,
   check: <path d="m5 12.5 4.5 4.5L19 7.5" />,
   chave: <><circle cx="8" cy="15" r="4" /><path d="m11 12 8.5-8.5M16 7l2.5 2.5M14 9l2 2" /></>,
-  panela: <><path d="M4 10h16v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4Z" /><path d="M2 10h20M9 6.5c0-1 1-1.5 1-2.5M13 6.5c0-1 1-1.5 1-2.5" /></>
+  github: <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />,
+  panela:<><path d="M4 10h16v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4Z" /><path d="M2 10h20M9 6.5c0-1 1-1.5 1-2.5M13 6.5c0-1 1-1.5 1-2.5" /></>
 } satisfies Record<string, ReactElement>;
 
 export type NomeIcone = keyof typeof caminhos;
